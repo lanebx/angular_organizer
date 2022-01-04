@@ -1,0 +1,17 @@
+.Selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__data {
+    margin: 0 1rem;
+    text-align: center;
+    width: 200px;
+  }
+
+  i {
+    cursor: pointer;
+  }
+
+}
+

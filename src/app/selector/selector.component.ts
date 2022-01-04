@@ -1,3 +1,4 @@
+import { DateService } from './../shared/date.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,11 +6,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './selector.component.html',
   styleUrls: ['./selector.component.scss']
 })
-export class SelectorComponent implements OnInit {
+export class SelectorComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  constructor(private DateService: DateService) { }
 }
