@@ -1,5 +1,5 @@
-import { DateService } from './../shared/date.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {DateService} from './../shared/date.service';
 
 @Component({
   selector: 'app-selector',
@@ -8,5 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectorComponent {
 
-  constructor(private DateService: DateService) { }
+  constructor(public dateService: DateService) { }
+
+  go(dir: number) {
+    
+  }
 }

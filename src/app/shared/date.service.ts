@@ -6,5 +6,10 @@ import { BehaviorSubject } from "rxjs";
   providedIn: 'root'
 })
 export class DateService {
-  public date: BehaviorSubject<moment.Moment> = new BehaviorSubject(moment())
+  public date: BehaviorSubject<any> = new BehaviorSubject(moment());
+
+  changeMonth(dir: number) {
+    const value = this.date.value.add(dir, 'nonth');
+    this.date.next(value);
+  }
 }

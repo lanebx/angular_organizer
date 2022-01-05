@@ -1,13 +1,13 @@
 <p class="Selector">
-  <i class="material-icons">
+  <i class="material-icons" (click)="go(-1)">
     arrow_left
   </i>
 
-  <span class="Selector__data">
-    Дата
+  <span>
+    {{ dateService.date | async | moment}}
   </span>
 
-  <i class="material-icons">
+  <i class="material-icons" (click)="go(1)">
     arrow_right
   </i>
 </p>
